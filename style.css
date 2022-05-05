@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.line{
+border: 3px solid black;
+position: relative;
+width: 1000px;
+height: 200px;
+/* transform: rotate(20deg); */
+top: 200px;
+left: 10px;
+border-right: none;
+border-left: none;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background: aqua;
+    transform:  translate(0,33px);
+    position: relative;
+    animation-name: move;
+    animation-timing-function: linear;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+    transform-origin: 0, 100%;
+}
+@keyframes move{
+    0%{
+        top: 44px;
+        left: 100px;
+        transform: rotate(-7deg);
+    }
+    12%{
+        top: 22px;
+        left: 200px;
+        transform: rotate(45deg);
+        border-color: brown;
+    }
+    25%{
+        top: 44px;
+        left: 300px;
+        transform: rotate(90deg);
+        background-color: aquamarine;
+    }
+    37%{
+        top: 22px;
+        left: 400px;
+        transform: rotate(135deg);
+        
+    }
+    50%{
+        top: 44px;
+        left: 500px;
+        transform: rotate(180deg);
+        background-color: black;
+    }
+    62%{
+        top: 22px;
+        left: 600px;
+        transform: rotate(225deg);
+    }
+    
+    75%{
+        top: 44px;
+        left: 700px;
+        transform: rotate(270deg);
+        background-color: beige;
+    }
+    87%{
+        top: 22px;
+        left: 800px;
+        transform: rotate(315deg);
+    }
+    100%{
+        top: 44px;
+        left: 900px;
+        transform: rotate(360deg);
+        background-color: blueviolet;
+    }
+
+}
+
